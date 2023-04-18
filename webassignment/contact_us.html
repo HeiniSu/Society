@@ -1,0 +1,125 @@
+<!DOCTYPE html5>
+<!--Using HTML5 gives an error on W3C Mark-up Validation, but I have to use it because the home page and events calendar break if i don't-->
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>RGU Nordic Society</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+        <script src="JS/functionality.js"></script>
+    </head>
+
+    <body id="html_body">
+        <!--Header elements: logo, webpage title and login form & function-->
+        <header>
+            <img id="logo" src="images/swan_logo.jpg" alt="logo">
+            <h1 id="header">Nordic Society</h1>
+
+            <div id="login">
+                <form id="loginForm">
+                  <fieldset>
+                    <input type="text" name="email" value="" placeholder="email">
+                    <input type="text" name="password" value="" placeholder="password">
+                    <button type="button" onclick=login_check()>Login</button>
+                  </fieldset>
+                </form>
+              </div>
+        </header>
+
+        <script>
+            let loginCounter = 1;
+
+            function login_check() {
+                let email = document.forms["loginForm"]["email"].value;
+                let password = document.forms["loginForm"]["password"].value;
+
+                if(email == "") {
+                    alert("You must give an email!");
+                } else if(password == "") {
+                    alert("You must give a password!"); 
+                } else {
+                    if(loginCounter % 2 === 0){
+                        alert("You have been logged in!");
+                    } else {
+                        alert("You have been logged out!")
+                    }
+                    loginCounter++;
+                }
+            }           
+        </script>
+
+        <!--Navigation bar-->
+        <nav>
+            <ul>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li class="active"><a href="event_calendar.html">Events</a></li>
+                <li class="active"><a href="current_members.html">Members</a></li>
+                <li class="active"><a href="img_gallery.html">Gallery</a></li>
+                <li class="active"><a href="recs.html">Tips</a>></li>
+                <li class="active"><a href="contact_us.html">Contacts</a></li>
+                <li class="active"><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+
+        <main>
+
+            <div id="contact">
+                <!--Quick page info-->
+                <div>
+                    <h3>Contact us</h3>
+                    <p>Use this form to contact us!</p>
+                </div>
+
+                <div id="separatorContact">
+                    <p>   </p>
+                </div>
+
+                <!--Contact form-->
+                <div id="contactForm">
+                    <form>
+                        <fieldset>
+                        <input type="text" name="name" value="" placeholder="Name"><br>
+
+                        <input type="text" name="email" value="" placeholder="Email"><br>
+                        <br>
+                        <p>Membership status:</p>
+                        <input type="radio" id="member" name="membership_status" value="Member">
+                        <label for="member">Member</label><br>
+                        <input type="radio" id="non-member" name="membership_status" value="Non-member">
+                        <label for="non-member">Non-member</label><br>
+                        <br>
+                        <textarea name="comment" cols="45" rows="5" placeholder="Comments"></textarea><br>
+
+                        <p>Attachment:</p>
+                        <input type="file" id="userfile" name="userfile"><br>
+
+                        <button type="button" onclick=send_form()>Submit</button>
+                        </fieldset>
+                    </form>
+
+                    <div>
+                        <p id="form_outcome"></p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--Info on other ways of contacting society-->
+            <div id="other_contacts">
+                <h4>Social media</h4>
+                <p>Twitter, Instagram: @rgunordic</p>
+                <h4>Email us</h4>
+                <p>nordicsodiety.rgu@email.com</p>
+            </div>
+        </main>
+
+        <aside>
+            
+        </aside>
+
+        <footer>
+            <p>Copyright Heini Suominen</p>
+        </footer>
+    </body>
+</html>

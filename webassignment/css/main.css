@@ -1,0 +1,456 @@
+/* colours: White: #FFFFFF, Black: #00000, Beige: #ECE5D5, Dark blue: #626C7E, accent for nav: #6994E1 */
+/* font: quicksand, backup: sans-serif   
+font sizes: 10pt for passage, 36pt for largest heading */
+
+/* font-family: 'Quicksand', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+
+/*General page CSS*/
+#html_body {
+    background-color: #aaaaad;
+    font-family: 'Quicksand', sans-serif;
+}
+
+header {
+    background-color: #ECE5D5;
+    height: 68px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+    margin-bottom: 0;
+}
+
+h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 40px;
+}
+
+h2 {
+    font-family: 'Quicksand', sans-serif;
+}
+
+h3 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 27px;
+    padding: 5px;
+}
+
+h4 {
+    font-family: 'Quicksand', sans-serif;
+}
+
+h5 {
+    font-family: 'Quicksand', sans-serif;
+}
+
+h6 {
+    font-family: 'Quicksand', sans-serif;
+}
+
+p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    padding: 5px;
+}
+
+main {
+    background-color: #ECE5D5;
+    border-radius: 5px;
+    display: block;
+    margin: 5px;
+}
+
+aside {
+    background-color: #ECE5D5;
+    border-radius: 10px;
+    display: block;
+    margin: 5px;
+}
+
+footer {
+    background-color: #626C7E;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    margin: 5px;
+}
+
+#separator {
+    background-color: #626C7E;
+}
+
+#separatorContact {
+    width: 75%;
+    background-color: #626C7E;
+}
+
+
+/*Header elements*/
+#logo {
+    height: 50px;
+    width: 50px;
+    float: left;
+    margin-right:10px;
+    padding-top:8px;
+    padding-left: 5px;
+}
+
+#header {
+    width: 60%;
+    display: inline;
+}
+
+#login {
+    float: right;
+    vertical-align: top;
+    width: 25%;
+    margin-top: 10px;
+}
+
+#login button {
+    padding: 3px;
+    color: white;
+    background-color: #626C7E;
+    border: none;
+}
+
+#login button:hover {
+    background-color: #6994E1;
+}
+
+
+/*Nav bar*/
+nav {
+    height: 40px;
+    background-color: #626C7E;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+nav li {
+    background-color: #626C7E;
+    list-style-type: none;
+    border: 2px;
+    border-style: solid;
+    border-color: #ECE5D5;
+    width: 14.284%;
+    height: 16px;
+}
+
+nav ul {
+    height: inherit;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+nav>ul>li {
+    float: left;
+    height: inherit
+}
+
+nav ul li a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px;
+    color: white;
+}
+
+nav li:hover {
+    background-color: #6994E1
+}
+
+
+/*Carousel*/
+
+#carousel {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.carousel-item img {
+    height: 70%;
+    filter: brightness(0.85);
+}
+
+.carousel-item h5 {
+    font-weight: bold;
+}
+
+/*Home page*/
+
+#home {
+    height: 81%;
+}
+
+#tweets {
+    right: 0;
+    margin-top: 20px;
+    margin-left: 2%;
+    margin-bottom: 20px;
+    width: 25%;
+    display: inline-block;
+}
+
+#left_side {
+    left: 0;
+    vertical-align: top;
+    width: 70%;
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+#article {
+    display: inline-block;
+    width: 99.5%;
+}
+
+.articlePicture {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 5px;
+    float: left;
+}
+
+.headline {
+    margin: 20px;
+}
+
+
+/*Calendar page*/
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    height: 75%;
+}
+
+table td, table th {
+    border-radius: 2px;
+    border-style: solid;
+    border-color: white;
+}
+
+table td {
+    width: min-content;
+    text-align: center;
+    padding: 3px;
+    border: 3px solid white;
+    text-align: center;
+    font-size: 10pt;
+}
+
+table tr:nth-child(even) {
+    background-color: #c0beb2;
+}
+
+table tr:hover {
+    background-color: #aaaaad;
+}
+
+table th {
+    background-color: #626C7E;
+    color: white;
+    text-align: center;
+    border: 3px solid white;
+}
+
+th:nth-child(1) {
+    width: 5%;
+}
+
+#eventForm {
+    margin: 10px;
+    display: inline-block;
+}
+
+#eventForm button {
+    padding: 3px;
+    color: white;
+    background-color: #626C7E;
+    border: none;
+}
+
+#eventForm button:hover {
+    background-color:#6994E1;
+}
+
+
+/*Members page*/
+
+#members-container {
+    padding: 20px;
+}
+
+.members-text {
+    text-align: center;
+}
+
+.members-picture {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 70px;
+}
+
+.members-picture:hover {
+    background-color: #aaaaad;
+}
+
+
+/*Gallery*/
+
+.pictures {
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+    filter: blur(3px) brightness(0.9);
+}
+
+#gallery {
+    padding: 10px;
+}
+
+#gallery .row {
+    margin-bottom: 10px;
+}
+
+
+/*Tips page*/
+
+#tipsMain {
+    overflow: auto;
+}
+
+#tipsLeft {
+    width: 68%;
+    display: inline-block;
+    margin: 10px;
+    margin-top: 20px;
+}
+
+#separatorTips {
+    background-color: #626C7E;
+    margin-left: 10px;
+}
+
+#displayed-tips {
+    margin: 10px;
+    width: 98%;
+    height: 60%;
+    float: left;
+    overflow: scroll;
+}
+
+.tips {
+    margin: 10px;
+    border: solid #626C7E;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.tips:hover {
+    background-color: #aaaaad;
+}
+
+#tipsRight {
+    vertical-align: top;
+    float: right;
+    width: 20%;
+    margin-right: 7.5%;
+    margin-top: 50px;
+}
+
+#search button {
+    padding: 3px;
+    color: white;
+    background-color: #626C7E;
+    border: none;
+}
+
+#search button:hover {
+    background-color:#6994E1;
+}
+
+#submission {
+    margin-top: 70px;
+}
+
+#submission button {
+    margin: 3px;
+    padding: 3px;
+    color: white;
+    background-color: #626C7E;
+    border: none;
+}
+
+#submission button:hover {
+    background-color: #6994E1 ;
+}
+
+
+
+/*Contact page*/
+
+#contact {
+    left: 0px;
+    width: 77%;
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#contactForm button {
+    padding: 3px;
+    color: white;
+    background-color: #626C7E;
+    border: none;
+}
+
+#contactForm button:hover {
+    background-color: #6994E1;
+}
+
+#other_contacts {
+    background-color: #626C7E;
+    color: white;
+    right: 0;
+    vertical-align: top;
+    width: 20%;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+
+/*Join page*/
+
+#join-page {
+    left: 0px;
+    width: 60%;
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#application button {
+    padding: 3px;
+    color: white;
+    background-color: #626C7E;
+    border: none;
+}
+
+#application button:hover {
+    background-color: #6994E1;
+}
+
